@@ -45,11 +45,9 @@ The app delivers inspirational quotes daily, allows users to favorite and share 
 |------------|-----------|
 | ![Share](screenshots/loading.jpeg) | ![Favorites](screenshots/favorites.jpeg) |
 
-> 📌 **Note:** Add your screenshots inside a `screenshots/` folder and update file names if needed.
-
 ---
 
-##🚀 How to Run the Project
+## 🚀 How to Run the Project
 
 -Clone the repository:
 

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily Inspiration"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="2dp"/>
+
+        <!-- Icon -->
+        <ImageView
+            android:id="@+id/iconImage"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/owl"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Icon"
+            android:scaleType="centerInside"/>
+
+        <!-- Quote Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/quote_card_bg"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:id="@+id/quoteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading quote..."
+                android:textSize="22sp"
+                android:textColor="@color/quoteText"
+                android:textAlignment="center"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/authorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:textColor="@color/authorText"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buttons -->
+        <!-- Buttons with improved layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Primary action - full width -->
+            <Button
+                android:id="@+id/newQuoteButton"
+                style="@style/QuoteButtonStyle"
+                android:text="New Quote"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Secondary actions - horizontal pair -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/favoriteButton"
+                    style="@style/QuoteButtonStyle"
+                    android:text="❤️ Favorite"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/shareButton"
+                    style="@style/QuoteButtonStyle"
+                    android:text="Share"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Tertiary action - full width -->
+            <Button
+                android:id="@+id/showFavButton"
+                style="@style/QuoteButtonStyle"
+                android:text="Show Favorites"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

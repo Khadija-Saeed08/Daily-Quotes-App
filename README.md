@@ -49,7 +49,7 @@ The app delivers inspirational quotes daily, allows users to favorite and share 
 
 ## 🚀 How to Run the Project
 
--Clone the repository:
+- Clone the repository:
 
 ```
 
